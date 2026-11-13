@@ -1,4 +1,3 @@
-streamlit
 pandas
 numpy
 joblib
@@ -7,3 +6,6 @@ requests
 SpeechRecognition
 scikit-learn
 plotly
+streamlit
+streamlit-webrtc
+av
