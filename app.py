@@ -37,7 +37,6 @@ SAPLING_URL = "https://api.sapling.ai/api/v1/aidetect"
 st.set_page_config(
     page_title="AI Mock Interview Analyzer",
     layout="wide",
-    page_icon="≡ƒÄÖ∩╕Å",
 )
 
 try:
