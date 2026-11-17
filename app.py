@@ -1,4 +1,4 @@
-﻿import os
+import os
 import re
 import pathlib
 import tempfile
@@ -37,7 +37,7 @@ SAPLING_URL = "https://api.sapling.ai/api/v1/aidetect"
 st.set_page_config(
     page_title="AI Mock Interview Analyzer",
     layout="wide",
-)
+    )
 
 try:
     SAPLING_API_KEY = st.secrets.get("SAPLING_API_KEY", "")
@@ -241,7 +241,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("≡ƒÄÖ∩╕Å AI Mock Interview Analyzer")
+st.title("AI Mock Interview Analyzer")
 st.caption(
     "Resume-aware technical interview system with speech-to-text, "
     "trained ML scoring, and Sapling AI Detection"
@@ -483,7 +483,7 @@ for key, value in DEFAULTS.items():
 if not st.session_state.interview_started:
 
     st.subheader(
-        "≡ƒôä Step 1: Candidate Verification & Resume Analysis"
+        "Step 1: Candidate Verification & Resume Analysis"
     )
 
     uploaded_pdf = st.file_uploader(
@@ -606,7 +606,7 @@ else:
 
     if st.session_state.disqualified:
 
-        st.error("≡ƒÜ½ INTERVIEW DISQUALIFIED")
+        st.error("INTERVIEW DISQUALIFIED")
         st.title("Interview Cancelled!")
 
         st.write(
@@ -624,7 +624,7 @@ else:
     if switch_count == 1:
 
         st.warning(
-            "ΓÜá∩╕Å Window switch detected. Please return to the interview "
+            "Window switch detected. Please return to the interview "
             "and remain focused. (1 of 2 allowed switches used.)"
         )
 
@@ -634,7 +634,7 @@ else:
     if question_index >= len(questions):
 
         st.header(
-            "≡ƒÅü Interview Evaluation & Performance Report"
+            "Interview Evaluation & Performance Report"
         )
 
         evaluations = st.session_state.evaluations
@@ -681,7 +681,7 @@ else:
         if average_ai >= 40:
 
             st.error(
-                f"Γ¥î **STATUS: REVIEW REQUIRED** "
+                f"**STATUS: REVIEW REQUIRED** "
                 f"(AI assistance indicator: {average_ai:.1f}%)"
             )
 
@@ -694,7 +694,7 @@ else:
         else:
 
             st.success(
-                f"Γ£à **STATUS: NO HIGH AI-DETECTION FLAG** "
+                f"**STATUS: NO HIGH AI-DETECTION FLAG** "
                 f"(AI assistance indicator: {average_ai:.1f}%)"
             )
 
@@ -791,7 +791,7 @@ else:
             )
 
         if st.button(
-            "≡ƒöä Start New Interview",
+            "Start New Interview",
             type="primary"
         ):
 
@@ -841,7 +841,7 @@ else:
     )
 
     if st.button(
-        "≡ƒÜÇ Submit & Save Answer",
+        "Submit & Save Answer",
         type="primary",
         key=f"submit_btn_{question_index}",
     ):
@@ -850,7 +850,7 @@ else:
 
         if audio is not None:
 
-            with st.spinner("≡ƒÄÖ∩╕Å Converting audio to text..."):
+            with st.spinner("Converting audio to text..."):
 
                 final_answer = convert_audio_to_text(
                     audio.getvalue()
@@ -908,7 +908,7 @@ else:
                 })
 
                 st.success(
-                    f'Γ£à Answer saved! Transcribed text: "{final_answer}"'
+                    f'Answer saved! Transcribed text: "{final_answer}"'
                 )
 
                 st.info(
