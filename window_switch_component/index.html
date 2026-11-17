@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <title>Window Switch Monitor</title>
+=======
+    <meta charset="UTF-8">
+    <title>Window Switch Monitor</title>
+>>>>>>> b1b873f9f32711c5065b0a1cb9ae10d90d538e08
 </head>
 <body>
 <script>
 (function () {
+<<<<<<< HEAD
   let switchCount = 0;
   let resetToken = null;
   let initialized = false;
@@ -70,6 +76,58 @@
   postToStreamlit("streamlit:componentReady", {
     apiVersion: 1
   });
+=======
+    let switchCount = 0;
+    let resetToken = null;
+    let initialized = false;
+    let lastSwitchAt = 0;
+
+    function send(type, extra) {
+        window.parent.postMessage(
+            Object.assign({ isStreamlitMessage: true, type }, extra || {}),
+            "*"
+        );
+    }
+
+    function onRender(event) {
+        const message = event.data || {};
+        if (message.type !== "streamlit:render") return;
+
+        const args = message.args || {};
+        const token = args.reset_token;
+        const serverCount = Number(args.current_count || 0);
+
+        if (!initialized || token !== resetToken) {
+            resetToken = token;
+            switchCount = serverCount;
+            initialized = true;
+            lastSwitchAt = 0;
+        } else {
+            switchCount = Math.max(switchCount, serverCount);
+        }
+
+        send("streamlit:setFrameHeight", { height: 0 });
+    }
+
+    function onVisibilityChange() {
+        if (!initialized || !document.hidden) return;
+
+        const now = Date.now();
+        if (now - lastSwitchAt < 1500) return;
+
+        lastSwitchAt = now;
+        switchCount += 1;
+
+        send("streamlit:setComponentValue", {
+            value: switchCount,
+            dataType: "json"
+        });
+    }
+
+    window.addEventListener("message", onRender);
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    send("streamlit:componentReady", { apiVersion: 1 });
+>>>>>>> b1b873f9f32711c5065b0a1cb9ae10d90d538e08
 })();
 </script>
 </body>

@@ -1,0 +1,11 @@
+pandas
+numpy
+joblib
+PyMuPDF
+requests
+SpeechRecognition
+scikit-learn
+plotly
+streamlit
+streamlit-webrtc
+av
