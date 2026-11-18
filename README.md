@@ -1,243 +1,372 @@
-<div align="center">
+# 🎙️ AI-Powered Mock Interview Analyzer
 
-# 🎙️ AI Mock Interview Analyzer
+### Intelligent Resume Analysis | Adaptive Technical Interviews | NLP | Machine Learning | Performance Intelligence
 
-**Upload a resume, get interviewed on your own skills, and see exactly how you scored.**
+\<p align="center">   \<img src="[https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/AI-Machine%20Learning-purple?style=for-the-badge](https://img.shields.io/badge/AI-Machine%20Learning-purple?style=for-the-badge)" />   \<img src="[https://img.shields.io/badge/NLP-Advanced-green?style=for-the-badge](https://img.shields.io/badge/NLP-Advanced-green?style=for-the-badge)" />   \<img src="[https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white](https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Cloud-AWS%20EC2-orange?style=for-the-badge&logo=amazonaws&logoColor=white](https://img.shields.io/badge/Cloud-AWS%20EC2-orange?style=for-the-badge\&logo=amazonaws\&logoColor=white)" /> \</p>
 
-Resume → Skill Analysis → Domain Detection → Mock Interview → NLP/ML Evaluation → Performance Dashboard
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ai-mock-interview-analyzer.streamlit.app/)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![NLP](https://img.shields.io/badge/NLP-NLTK%20%7C%20spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)](https://spacy.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-### 🚀 [Try the live demo](https://ai-mock-interview-analyzer.streamlit.app/)
-
-</div>
+\<p align="center">   \<b>Turn your resume into an intelligent technical interview experience.\</b>   \<br/>   Analyze skills, answer personalized questions, and receive automated ML-powered performance insights. \</p>
 
 ---
 
-## 📌 Overview
+## 🌐 Live Application
 
-AI Mock Interview Analyzer gives you a personalized technical interview without needing another person on the call.
+🚀 **Live Demo:** [Launch AI Mock Interview Analyzer](#)
 
-It reads your resume, works out which technical domain you belong to, picks questions for that domain, and takes your answers by text or voice. Each answer is scored with NLP checks and a trained ML model, and at the end you get a dashboard showing your strengths and gaps.
+📂 **GitHub Repository:** [View Source Code](#)
+
+---
+
+## 💡 About the Project
+
+The **AI-Powered Mock Interview Analyzer & Intelligent Skill Assessment System** is a machine learning-based web application designed to automate technical interview practice and candidate performance evaluation.
+
+The application provides an end-to-end interview experience, starting with candidate verification and resume analysis, followed by technical questioning, answer evaluation, and an interactive performance report.
+
+It analyzes candidate responses using NLP-based evaluation metrics and machine learning techniques to generate quantitative performance insights.
+
+Unlike conventional mock interview systems, this application focuses on measurable answer quality, concept understanding, semantic relevance, and potential AI-generated response patterns.
+
+### 🔄 Complete Application Workflow
+
+**Resume Upload → Candidate Verification → Resume Analysis → Technical Interview → Answer Evaluation → ML-Based Assessment → Performance Dashboard**
+
+---
 
 ## ✨ Key Features
 
-### 📄 Smart resume parsing
-- Upload your resume as a PDF
-- Text is extracted with PyMuPDF
-- Skills, tools, projects and experience keywords are picked out
-- That context is used to personalize the interview
+### 📄 1. Candidate Verification & Resume Analysis
 
-### 🧭 Domain identification
-Extracted skills are mapped to a domain, and the matching question category is loaded from `questions.csv`.
+- Upload and analyze candidate resumes.
+- Extract resume information using PyMuPDF.
+- Identify technical skills, technologies, and relevant keywords.
+- Analyze candidate profiles before starting the interview.
 
-### 🎤 Voice and text answers
-Answer however you're comfortable:
-- 🎤 Voice, using SpeechRecognition
-- ⌨️ Text, typed straight into the app
+### 🧭 2. Intelligent Technical Interview
 
-### 🧠 NLP answer analysis
-Every answer is checked for:
-- Relevance to the question
-- Technical concepts used
-- Keyword coverage
-- Clarity
-- Concept density
-- Depth
+- Generate technical questions based on the candidate's profile and selected domain.
+- Present questions through an interactive interview interface.
+- Evaluate answers question by question.
+- Support text-based and voice/audio response interaction.
 
-### 🤖 ML scoring
-A custom Scikit-Learn model, saved as `answer_eval_model.pkl`, rates answer quality. It was trained on the labelled data in `answer_evaluation.csv`.
+### 🎤 3. Voice & Text-Based Responses
 
-### 🕵️ AI-generated answer checks
-Looks at structure, factual precision and depth against benchmark technical answers, so a polished but hollow answer doesn't score well.
+- Interactive answer submission interface.
+- Audio-based response interaction.
+- Voice waveform visualization in the interview interface.
+- Text-based answer evaluation.
 
-### 🔐 API key protection
-Keys are read from environment variables, sanitized, and kept out of logs and request payloads.
+### 🧠 4. Advanced NLP-Based Answer Evaluation
 
-### 📈 Performance dashboard
-An interactive Plotly radar chart plus a score breakdown for every question.
+The application evaluates candidate responses using multiple NLP and answer-quality metrics.
+
+| Evaluation Metric   | Description                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
+| Concept Coverage    | Measures how many important concepts are covered                         |
+| Semantic Similarity | Evaluates contextual similarity between the answer and expected response |
+| Semantic Relevance  | Measures how relevant the response is to the interview question          |
+| Answer Quality      | Evaluates the overall quality of the response                            |
+| AI Detection        | Identifies potential AI-generated response patterns                      |
+| Question-wise Score | Provides individual scores for submitted answers                         |
+
+### 🤖 5. Machine Learning-Based Scoring
+
+The application uses a machine learning evaluation pipeline to generate predicted interview scores.
+
+**Ensemble Model Architecture (as specified for the project):**
+
+| Component    | Algorithm                   |
+| ------------ | --------------------------- |
+| Base Model 1 | Extra Trees Regressor       |
+| Base Model 2 | Random Forest Regressor     |
+| Base Model 3 | Gradient Boosting Regressor |
+| Meta Model   | Ridge Regression            |
+| Ensemble     | Stacking Regressor          |
+
+The ensemble combines predictions from multiple regression algorithms to estimate candidate answer scores.
+
+### 📊 6. Intelligent Performance Dashboard
+
+The application generates a detailed **Interview Evaluation & Performance Report**.
+
+Dashboard features include:
+
+- Overall Interview Score.
+- Concept Coverage.
+- Semantic Similarity.
+- AI Detection Percentage.
+- Question-wise scoring.
+- Radar chart visualization.
+- Individual answer evaluation.
+- Performance warnings and improvement insights.
+
+**Example metrics displayed in the demonstration video:**
+
+| Performance Metric  | Demo Result 1 |
+| ------------------- | ------------: |
+| Overall Score       |    84.1 / 100 |
+| Concept Coverage    |         27.2% |
+| Semantic Similarity |         15.0% |
+| AI Detection        |         32.7% |
+
+*These are demonstration-session values, not fixed model accuracy figures.*
+
+### 🚨 7. Automated Evaluation Warnings
+
+The system can display evaluation warnings when responses exhibit potential issues, including:
+
+- Low semantic relevance.
+- Suspicious AI-generated response patterns.
+- Insufficient conceptual coverage.
+- Answers requiring further technical explanation.
+
+These warnings help candidates understand areas requiring improvement.
+
+### ☁️ 8. Cloud Deployment
+
+- Interactive Streamlit web interface.
+- Cloud deployment using AWS EC2.
+- Streamlit Community Cloud hosting support.
+- Browser-accessible application.
 
 ---
 
-## 🏗️ How it works
+## 🏗️ System Architecture
 
-```text
-Resume (PDF)
-    |
-    v
-PyMuPDF parser --> skills, keywords, context
-    |
-    v
-Domain detection <-- questions.csv
-    |
-    v
-Interview (Streamlit, app.py)
-    |-- 🎤 voice input (SpeechRecognition)
-    |-- ⌨️ text input
-    v
-Evaluation
-    |-- NLP analysis
-    |-- AI-answer detection
-    |-- ML scoring (answer_eval_model.pkl)
-    v
-Dashboard (Plotly radar + breakdown)
+```mermaid
+flowchart TD
+    A["Candidate Resume (PDF)"] --> B["Candidate Verification"]
+    B --> C["Resume Analysis"]
+    C --> D["Skill Extraction & Domain Detection"]
+
+    D --> E["Technical Interview"]
+    E --> F["Question Presentation"]
+
+    F --> G["Text Response"]
+    F --> H["Voice / Audio Response"]
+
+    G --> I["Answer Processing"]
+    H --> I
+
+    I --> J["NLP Feature Engineering"]
+
+    J --> K["Concept Coverage"]
+    J --> L["Semantic Similarity"]
+    J --> M["Semantic Relevance"]
+    J --> N["AI Detection"]
+
+    K --> O["ML-Based Evaluation"]
+    L --> O
+    M --> O
+    N --> O
+
+    O --> P["Predicted Interview Score"]
+    P --> Q["Performance Dashboard"]
+
+    Q --> R["Radar Chart"]
+    Q --> S["Question-wise Scores"]
+    Q --> T["Evaluation Warnings"]
+    Q --> U["Performance Insights"]
 ```
 
-## 🧰 Tech stack
+---
 
-| Area | Tools |
-|------|-------|
-| Language | Python |
-| App / UI | Streamlit |
-| ML | Scikit-learn, Joblib |
-| Data | Pandas, NumPy |
-| NLP | NLTK, spaCy |
-| Resume parsing | PyMuPDF |
-| Speech input | SpeechRecognition |
-| Charts | Plotly |
-| Integrations | REST API wrappers |
+## ⚙️ Interview Evaluation Workflow
 
-## 📁 Project structure
+**1. Candidate Verification**
+
+The application begins by verifying the candidate and preparing the resume analysis process.
+
+**2. Resume Analysis**
+
+The uploaded resume is processed to identify technical skills, experience, and relevant information.
+
+**3. Technical Questioning**
+
+The application presents technical interview questions for the candidate to answer.
+
+**4. Answer Submission**
+
+Candidates interact with the interview interface through text and voice/audio responses.
+
+**5. NLP Processing**
+
+The submitted responses are processed to calculate answer-quality and semantic evaluation metrics.
+
+**6. Machine Learning Evaluation**
+
+The extracted features are passed through the trained evaluation model to generate predicted scores.
+
+**7. Performance Reporting**
+
+The final report presents the overall score, individual question scores, radar visualization, and evaluation warnings.
+
+---
+
+## 🛠️ Technology Stack
+
+| Category                 | Technologies                                     |
+| ------------------------ | ------------------------------------------------ |
+| Programming Language     | Python                                           |
+| Frontend & Web Framework | Streamlit                                        |
+| Machine Learning         | Scikit-learn                                     |
+| Ensemble Learning        | Stacking Regressor                               |
+| NLP                      | TF-IDF, Semantic Similarity, Feature Engineering |
+| Resume Parsing           | PyMuPDF                                          |
+| Voice Recognition        | SpeechRecognition                                |
+| Data Processing          | Pandas, NumPy                                    |
+| Data Visualization       | Plotly                                           |
+| Model Serialization      | Pickle                                           |
+| Cloud Infrastructure     | AWS EC2                                          |
+| Deployment               | Streamlit Community Cloud                        |
+| Development Tools        | Jupyter Notebook, VS Code, Git & GitHub          |
+
+---
+
+## 📂 Project Structure
 
 ```text
 AI-Mock-Interview-Analyzer/
-├── app.py                  Streamlit app and main logic
-├── MODEL.ipynb             EDA, feature engineering, training
-├── answer_eval_model.pkl   trained scoring model
-├── questions.csv           question bank by domain
-├── answer_evaluation.csv   training and benchmark data
+│
+├── app.py
+├── MODEL.ipynb
+├── questions.csv
+├── answer_evaluation.csv
+├── ai_mock_interview_champion_model.pkl
 ├── requirements.txt
-└── README.md
+├── README.md
+│
+└── assets/
+    ├── resume_analysis.png
+    ├── interview_interface.png
+    ├── performance_dashboard.png
+    └── evaluation_report.png
 ```
 
 ---
 
-## ⚙️ Run it locally
+## 🚀 Installation & Setup
 
-You need Python 3.9 or newer, plus a microphone if you want voice answers. On some machines SpeechRecognition's mic input also needs PyAudio, which depends on PortAudio.
-
-**1. Clone the repo**
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/AI-Mock-Interview-Analyzer.git
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Navigate to Project
+
+```bash
 cd AI-Mock-Interview-Analyzer
 ```
 
-**2. Make a virtual environment**
-
-macOS / Linux:
+### 3. Create Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate
 ```
 
-Windows:
+**Windows:**
 
 ```bash
-python -m venv venv
 venv\Scripts\activate
 ```
 
-**3. Install dependencies**
+**Linux / macOS:**
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Download NLP resources** (only what your code uses)
-
-```bash
-python -m spacy download en_core_web_sm
-python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
-```
-
-**5. Set your API key**
-
-Create a `.env` file in the project root and keep it out of git:
-
-```env
-API_KEY=your_api_key_here
-```
-
-```bash
-echo ".env" >> .gitignore
-```
-
-**6. Start the app**
+### 5. Run Application
 
 ```bash
 streamlit run app.py
 ```
 
-It opens at http://localhost:8501.
-
-## 🎯 Using the app
-
-1. Upload your resume as a PDF.
-2. Check the skills and domain it detected.
-3. Start the interview and answer each question by voice or text.
-4. See the score for each answer.
-5. Open the dashboard for the radar chart and full breakdown.
+Open the local URL displayed in your terminal.
 
 ---
 
-## 🧪 Training the model
+## 📸 Application Preview
 
-Everything about the scoring model lives in `MODEL.ipynb`.
+### 1. Candidate Verification & Resume Analysis
 
-```bash
-pip install jupyter
-jupyter notebook MODEL.ipynb
-```
 
-The notebook goes through these steps:
 
-1. **Explore** `answer_evaluation.csv`: score distribution, class balance, missing values, answer lengths.
-2. **Build features** from the answers, like relevance, concept density and clarity signals.
-3. **Train** the Scikit-Learn pipeline and tune it with cross-validation.
-4. **Evaluate** on a held-out split before replacing the current model.
-5. **Export** the model:
+### 2. Interactive Technical Interview
 
-```python
-import joblib
-joblib.dump(model, "answer_eval_model.pkl")
-```
 
-`app.py` loads it with `joblib.load("answer_eval_model.pkl")`, so swapping the file and restarting Streamlit is all it takes.
 
-Things to keep in mind when retraining:
+### 3. Interview Evaluation & Performance Report
 
-- The feature code in the notebook must match what `app.py` does at inference time, otherwise scores will be off.
-- To improve the model, add more labelled rows to `answer_evaluation.csv` and retrain.
-- Keep old `.pkl` files (like `answer_eval_model_v1.pkl`) so you can roll back.
-- New domains or questions go into `questions.csv`.
 
-## 🔐 Security
 
-- Secrets are loaded from environment variables only.
-- API keys are sanitized and masked before logging or building request payloads.
-- Never commit `.env` or any credentials.
-- Resumes are parsed locally. If you deploy this with real candidate data, check what gets sent to any external API first.
+### 4. Detailed Evaluation & Analytics
 
-## 🤝 Contributing
 
-Fork the repo, make a branch, commit, push, and open a pull request.
-
-## 📄 License
-
-MIT. See [LICENSE](LICENSE).
 
 ---
 
-<div align="center">
+## 🎯 Project Objectives
 
-Built by Mohd Kaunain Abidi
+- Automate technical mock interview sessions.
+- Provide resume-based candidate assessment.
+- Evaluate technical answers using NLP and ML.
+- Measure conceptual understanding and semantic relevance.
+- Identify potential AI-generated response patterns.
+- Generate structured performance reports.
+- Help candidates identify technical knowledge gaps.
 
-If this helped your interview prep, a ⭐ on the repo is appreciated.
+---
 
-</div>
+## 🔮 Future Enhancements
+
+- LLM-powered dynamic interview question generation.
+- Real-time answer feedback and recommendations.
+- Improved semantic understanding using transformer models.
+- Adaptive interview difficulty.
+- Multilingual interview support.
+- Historical performance tracking.
+- Advanced speech and pronunciation analysis.
+
+---
+
+## 🔐 Responsible AI & Limitations
+
+- Predicted scores are estimates and should not be treated as definitive judgments of candidate ability.
+- AI detection metrics are indicative and are not proof that an answer was generated by AI.
+- Semantic similarity does not independently establish technical correctness.
+- Speech recognition may be affected by background noise and pronunciation.
+- Model performance depends on training data quality and evaluation methodology.
+
+---
+
+## 👨‍💻 Developer
+
+**Mohd Kaunain**
+
+B.Tech – Computer Science & Engineering (Artificial Intelligence)
+
+**Areas of Interest:** Artificial Intelligence | Machine Learning | Data Science | Natural Language Processing
+
+---
+
+## ⭐ Support the Project
+
+If you find this project interesting:
+
+- ⭐ Star this repository.
+- 🍴 Fork the project.
+- 🐛 Report bugs and issues.
+- 🤝 Contribute to future improvements.
+
+\<p align="center">
+&#x20; \<b>Built with ❤️ using Python, Artificial Intelligence & Machine Learning\</b>
+&#x20; \<br/>
+&#x20; \<i>Making technical interview preparation smarter and more data-driven.\</i>
+\</p>
