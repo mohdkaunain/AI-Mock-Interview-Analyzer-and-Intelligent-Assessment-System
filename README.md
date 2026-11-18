@@ -1,18 +1,38 @@
-# 🎙️ AI-Powered Mock Interview Analyzer
+# 🎙️ AI Mock Interview Analyzer
 
 ### Intelligent Resume Analysis | Adaptive Technical Interviews | NLP | Machine Learning | Performance Intelligence
 
-\<p align="center">   \<img src="[https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/AI-Machine%20Learning-purple?style=for-the-badge](https://img.shields.io/badge/AI-Machine%20Learning-purple?style=for-the-badge)" />   \<img src="[https://img.shields.io/badge/NLP-Advanced-green?style=for-the-badge](https://img.shields.io/badge/NLP-Advanced-green?style=for-the-badge)" />   \<img src="[https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white](https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Cloud-AWS%20EC2-orange?style=for-the-badge&logo=amazonaws&logoColor=white](https://img.shields.io/badge/Cloud-AWS%20EC2-orange?style=for-the-badge\&logo=amazonaws\&logoColor=white)" /> \</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI-Machine%20Learning-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/NLP-Advanced-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streamlit-Framework-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cloud-AWS%20EC2-orange?style=for-the-badge&logo=amazonaws&logoColor=white" />
+</p>
 
-\<p align="center">   \<b>Turn your resume into an intelligent technical interview experience.\</b>   \<br/>   Analyze skills, answer personalized questions, and receive automated ML-powered performance insights. \</p>
+<p align="center">
+  <b>Turn your resume into an intelligent technical interview experience.</b>
+  <br/>
+  Analyze skills, answer personalized questions, and receive automated ML-powered performance insights.
+</p>
+
+<p align="center">
+  <a href="https://ai-mock-interview-analyzer.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Launch_Application-success?style=for-the-badge" />
+  </a>
+</p>
 
 ---
 
 ## 🌐 Live Application
 
-🚀 **Live Demo:** [Launch AI Mock Interview Analyzer](#)
+<p align="center">
+  <a href="https://ai-mock-interview-analyzer.streamlit.app/">
+    <b>🚀 LAUNCH AI MOCK INTERVIEW ANALYZER</b>
+  </a>
+</p>
 
-📂 **GitHub Repository:** [View Source Code](#)
+**Application:** https://ai-mock-interview-analyzer.streamlit.app/
 
 ---
 
@@ -24,8 +44,6 @@ The application provides an end-to-end interview experience, starting with candi
 
 It analyzes candidate responses using NLP-based evaluation metrics and machine learning techniques to generate quantitative performance insights.
 
-Unlike conventional mock interview systems, this application focuses on measurable answer quality, concept understanding, semantic relevance, and potential AI-generated response patterns.
-
 ### 🔄 Complete Application Workflow
 
 **Resume Upload → Candidate Verification → Resume Analysis → Technical Interview → Answer Evaluation → ML-Based Assessment → Performance Dashboard**
@@ -35,97 +53,83 @@ Unlike conventional mock interview systems, this application focuses on measurab
 ## ✨ Key Features
 
 ### 📄 1. Candidate Verification & Resume Analysis
-
 - Upload and analyze candidate resumes.
 - Extract resume information using PyMuPDF.
 - Identify technical skills, technologies, and relevant keywords.
 - Analyze candidate profiles before starting the interview.
 
 ### 🧭 2. Intelligent Technical Interview
-
 - Generate technical questions based on the candidate's profile and selected domain.
 - Present questions through an interactive interview interface.
 - Evaluate answers question by question.
 - Support text-based and voice/audio response interaction.
 
 ### 🎤 3. Voice & Text-Based Responses
-
 - Interactive answer submission interface.
 - Audio-based response interaction.
-- Voice waveform visualization in the interview interface.
+- Voice waveform visualization.
 - Text-based answer evaluation.
 
 ### 🧠 4. Advanced NLP-Based Answer Evaluation
 
-The application evaluates candidate responses using multiple NLP and answer-quality metrics.
-
-| Evaluation Metric   | Description                                                              |
-| ------------------- | ------------------------------------------------------------------------ |
-| Concept Coverage    | Measures how many important concepts are covered                         |
-| Semantic Similarity | Evaluates contextual similarity between the answer and expected response |
-| Semantic Relevance  | Measures how relevant the response is to the interview question          |
-| Answer Quality      | Evaluates the overall quality of the response                            |
-| AI Detection        | Identifies potential AI-generated response patterns                      |
-| Question-wise Score | Provides individual scores for submitted answers                         |
+| Evaluation Metric | Description |
+|---|---|
+| Concept Coverage | Measures important concepts covered |
+| Semantic Similarity | Evaluates contextual similarity |
+| Semantic Relevance | Measures answer relevance |
+| Answer Quality | Evaluates overall response quality |
+| AI Detection | Identifies potential AI-generated patterns |
+| Question-wise Score | Provides individual answer scores |
 
 ### 🤖 5. Machine Learning-Based Scoring
 
-The application uses a machine learning evaluation pipeline to generate predicted interview scores.
+The project uses an ensemble-based regression architecture for interview answer scoring.
 
-**Ensemble Model Architecture (as specified for the project):**
+**Stacking Ensemble Architecture**
 
-| Component    | Algorithm                   |
-| ------------ | --------------------------- |
-| Base Model 1 | Extra Trees Regressor       |
-| Base Model 2 | Random Forest Regressor     |
+| Component | Algorithm |
+|---|---|
+| Base Model 1 | Extra Trees Regressor |
+| Base Model 2 | Random Forest Regressor |
 | Base Model 3 | Gradient Boosting Regressor |
-| Meta Model   | Ridge Regression            |
-| Ensemble     | Stacking Regressor          |
-
-The ensemble combines predictions from multiple regression algorithms to estimate candidate answer scores.
+| Meta Model | Ridge Regression |
+| Ensemble | Stacking Regressor |
 
 ### 📊 6. Intelligent Performance Dashboard
-
-The application generates a detailed **Interview Evaluation & Performance Report**.
-
-Dashboard features include:
 
 - Overall Interview Score.
 - Concept Coverage.
 - Semantic Similarity.
 - AI Detection Percentage.
 - Question-wise scoring.
-- Radar chart visualization.
+- Interactive radar chart.
 - Individual answer evaluation.
 - Performance warnings and improvement insights.
 
-**Example metrics displayed in the demonstration video:**
+**Example demonstration results**
 
-| Performance Metric  | Demo Result 1 |
-| ------------------- | ------------: |
-| Overall Score       |    84.1 / 100 |
-| Concept Coverage    |         27.2% |
-| Semantic Similarity |         15.0% |
-| AI Detection        |         32.7% |
+| Metric | Demo Result |
+|---|---:|
+| Overall Score | 84.1 / 100 |
+| Concept Coverage | 27.2% |
+| Semantic Similarity | 15.0% |
+| AI Detection | 32.7% |
 
-*These are demonstration-session values, not fixed model accuracy figures.*
+*These are example session results, not model accuracy figures.*
 
 ### 🚨 7. Automated Evaluation Warnings
 
-The system can display evaluation warnings when responses exhibit potential issues, including:
-
 - Low semantic relevance.
-- Suspicious AI-generated response patterns.
+- Potential AI-generated response patterns.
 - Insufficient conceptual coverage.
 - Answers requiring further technical explanation.
-
-These warnings help candidates understand areas requiring improvement.
+- Interview rule violation and termination handling.
 
 ### ☁️ 8. Cloud Deployment
 
-- Interactive Streamlit web interface.
-- Cloud deployment using AWS EC2.
-- Streamlit Community Cloud hosting support.
+- Streamlit web interface.
+- AWS EC2 cloud infrastructure.
+- Streamlit Community Cloud deployment.
 - Browser-accessible application.
 
 ---
@@ -134,10 +138,9 @@ These warnings help candidates understand areas requiring improvement.
 
 ```mermaid
 flowchart TD
-    A["Candidate Resume (PDF)"] --> B["Candidate Verification"]
+    A["Resume Upload (PDF)"] --> B["Candidate Verification"]
     B --> C["Resume Analysis"]
     C --> D["Skill Extraction & Domain Detection"]
-
     D --> E["Technical Interview"]
     E --> F["Question Presentation"]
 
@@ -172,53 +175,33 @@ flowchart TD
 
 ## ⚙️ Interview Evaluation Workflow
 
-**1. Candidate Verification**
-
-The application begins by verifying the candidate and preparing the resume analysis process.
-
-**2. Resume Analysis**
-
-The uploaded resume is processed to identify technical skills, experience, and relevant information.
-
-**3. Technical Questioning**
-
-The application presents technical interview questions for the candidate to answer.
-
-**4. Answer Submission**
-
-Candidates interact with the interview interface through text and voice/audio responses.
-
-**5. NLP Processing**
-
-The submitted responses are processed to calculate answer-quality and semantic evaluation metrics.
-
-**6. Machine Learning Evaluation**
-
-The extracted features are passed through the trained evaluation model to generate predicted scores.
-
-**7. Performance Reporting**
-
-The final report presents the overall score, individual question scores, radar visualization, and evaluation warnings.
+1. **Candidate Verification:** Verify the candidate before starting.
+2. **Resume Analysis:** Extract technical skills and experience.
+3. **Technical Questioning:** Present domain-specific interview questions.
+4. **Answer Submission:** Accept text and voice/audio responses.
+5. **NLP Processing:** Calculate answer-quality and semantic metrics.
+6. **Machine Learning Evaluation:** Generate predicted interview scores.
+7. **Performance Reporting:** Display scores, charts, and improvement insights.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category                 | Technologies                                     |
-| ------------------------ | ------------------------------------------------ |
-| Programming Language     | Python                                           |
-| Frontend & Web Framework | Streamlit                                        |
-| Machine Learning         | Scikit-learn                                     |
-| Ensemble Learning        | Stacking Regressor                               |
-| NLP                      | TF-IDF, Semantic Similarity, Feature Engineering |
-| Resume Parsing           | PyMuPDF                                          |
-| Voice Recognition        | SpeechRecognition                                |
-| Data Processing          | Pandas, NumPy                                    |
-| Data Visualization       | Plotly                                           |
-| Model Serialization      | Pickle                                           |
-| Cloud Infrastructure     | AWS EC2                                          |
-| Deployment               | Streamlit Community Cloud                        |
-| Development Tools        | Jupyter Notebook, VS Code, Git & GitHub          |
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| Web Framework | Streamlit |
+| Machine Learning | Scikit-learn |
+| Ensemble Learning | Stacking Regressor |
+| NLP | TF-IDF, Semantic Similarity, Feature Engineering |
+| Resume Parsing | PyMuPDF |
+| Voice Recognition | SpeechRecognition |
+| Data Processing | Pandas, NumPy |
+| Visualization | Plotly |
+| Model Serialization | Pickle |
+| Cloud | AWS EC2 |
+| Deployment | Streamlit Community Cloud |
+| Development | Jupyter Notebook, VS Code, Git & GitHub |
 
 ---
 
@@ -246,69 +229,65 @@ AI-Mock-Interview-Analyzer/
 
 ## 🚀 Installation & Setup
 
-### 1. Clone Repository
+**1. Clone Repository**
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### 2. Navigate to Project
+**2. Navigate to Project**
 
 ```bash
 cd AI-Mock-Interview-Analyzer
 ```
 
-### 3. Create Virtual Environment
+**3. Create Virtual Environment**
 
 ```bash
 python -m venv venv
 ```
 
-**Windows:**
+**4. Activate Environment**
+
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-**Linux / macOS:**
+Linux / macOS:
 
 ```bash
 source venv/bin/activate
 ```
 
-### 4. Install Dependencies
+**5. Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run Application
+**6. Run Application**
 
 ```bash
 streamlit run app.py
 ```
 
-Open the local URL displayed in your terminal.
-
 ---
 
-## 📸 Application Preview
+## 📸 Application Screenshots
 
-### 1. Candidate Verification & Resume Analysis
+### Resume Analysis
+![Resume Analysis](assets/resume_analysis.png)
 
+### Technical Interview Interface
+![Interview Interface](assets/interview_interface.png)
 
+### Performance Dashboard
+![Performance Dashboard](assets/performance_dashboard.png)
 
-### 2. Interactive Technical Interview
-
-
-
-### 3. Interview Evaluation & Performance Report
-
-
-
-### 4. Detailed Evaluation & Analytics
-
-
+### Evaluation Report
+![Evaluation Report](assets/evaluation_report.png)
 
 ---
 
@@ -327,8 +306,8 @@ Open the local URL displayed in your terminal.
 ## 🔮 Future Enhancements
 
 - LLM-powered dynamic interview question generation.
-- Real-time answer feedback and recommendations.
-- Improved semantic understanding using transformer models.
+- Real-time answer feedback.
+- Transformer-based semantic evaluation.
 - Adaptive interview difficulty.
 - Multilingual interview support.
 - Historical performance tracking.
@@ -338,10 +317,10 @@ Open the local URL displayed in your terminal.
 
 ## 🔐 Responsible AI & Limitations
 
-- Predicted scores are estimates and should not be treated as definitive judgments of candidate ability.
-- AI detection metrics are indicative and are not proof that an answer was generated by AI.
+- Predicted scores are estimates, not definitive judgments of candidate ability.
+- AI detection metrics are indicative, not proof of AI usage.
 - Semantic similarity does not independently establish technical correctness.
-- Speech recognition may be affected by background noise and pronunciation.
+- Speech recognition may be affected by background noise.
 - Model performance depends on training data quality and evaluation methodology.
 
 ---
@@ -365,8 +344,8 @@ If you find this project interesting:
 - 🐛 Report bugs and issues.
 - 🤝 Contribute to future improvements.
 
-\<p align="center">
-&#x20; \<b>Built with ❤️ using Python, Artificial Intelligence & Machine Learning\</b>
-&#x20; \<br/>
-&#x20; \<i>Making technical interview preparation smarter and more data-driven.\</i>
-\</p>
+<p align="center">
+  <b>Built with ❤️ using Python, Artificial Intelligence & Machine Learning</b>
+  <br/>
+  <i>Making technical interview preparation smarter and more data-driven.</i>
+</p>
